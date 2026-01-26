@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Farmer Direct Sale Management System</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- IMPORTANT: go one level up -->
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
   <h1>Farmer Direct Sale</h1>
   <nav>
@@ -19,8 +22,10 @@
   </nav>
 </header>
 
+<!-- HOME -->
 <section id="home" class="section">
-  <img src="images/farmer.png" alt="Farmer selling fresh produce" class="hero-img">
+  <img src="../images/farmer.png" alt="Farmer selling fresh produce" class="hero-img">
+
   <h2>Sell Fresh. Buy Fresh.</h2>
   <p>Connecting farmers directly with customers without middlemen.</p>
 
@@ -30,55 +35,63 @@
   </div>
 </section>
 
+<!-- FARMER LOGIN -->
 <section id="farmer-login" class="section">
   <h2>Farmer Login</h2>
+
   <form>
     <label>Name</label>
-    <input type="text">
+    <input type="text" placeholder="Enter your name">
 
     <label>Phone</label>
-    <input type="tel">
+    <input type="tel" placeholder="Enter phone number">
 
     <label>Password</label>
-    <input type="password">
+    <input type="password" placeholder="Enter password">
 
-    <button class="btn">Login</button>
+    <button class="btn" type="submit">Login</button>
   </form>
 </section>
 
+<!-- BUYER LOGIN -->
 <section id="buyer-login" class="section">
   <h2>Buyer Login</h2>
+
   <form>
     <label>Email</label>
-    <input type="email">
+    <input type="email" placeholder="Enter email">
 
     <label>Password</label>
-    <input type="password">
+    <input type="password" placeholder="Enter password">
 
-    <button class="btn">Login</button>
+    <button class="btn" type="submit">Login</button>
   </form>
 </section>
 
+<!-- PRODUCTS -->
 <section id="products" class="section">
   <h2>Available Products</h2>
 
   <div class="product-grid">
+
     <article class="product-card">
-      <img src="images/tomato.png" alt="Fresh tomatoes">
+      <img src="../images/tomato.png" alt="Fresh tomatoes">
       <h3>Tomatoes</h3>
       <p>₹30 / kg</p>
       <a href="#cart" class="btn">Add to Cart</a>
     </article>
 
     <article class="product-card">
-      <img src="images/potato.png" alt="Fresh potatoes">
+      <img src="../images/potato.png" alt="Fresh potatoes">
       <h3>Potatoes</h3>
       <p>₹25 / kg</p>
       <a href="#cart" class="btn">Add to Cart</a>
     </article>
+
   </div>
 </section>
 
+<!-- CART -->
 <section id="cart" class="section">
   <h2>Cart</h2>
   <p>Tomatoes – 2 kg</p>
@@ -86,21 +99,27 @@
   <button class="btn">Place Order</button>
 </section>
 
+<!-- ADMIN -->
 <section id="admin" class="section">
   <h2>Admin Dashboard</h2>
+
   <div class="card">Total Farmers: 10</div>
   <div class="card">Total Buyers: 25</div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="section">
   <h2>About</h2>
-  <p>This system helps farmers sell directly to buyers using a simple interface.</p>
+  <p>
+    This system allows farmers to sell products directly to buyers
+    using a simple and farmer-friendly interface.
+  </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Farmer Direct Sale Management System</p>
 </footer>
 
 </body>
 </html>
-
