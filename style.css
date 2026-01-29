@@ -1,4 +1,37 @@
 /* Farmer Direct Sale Management – Advanced CSS3 only */
+/* RESET & SAFETY FIX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}/* RESET & SAFETY FIX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 :root{
   --accent:#E8F5E9;        /* chosen divider/section accent */
   --primary:#2E7D32;      /* deep green */
