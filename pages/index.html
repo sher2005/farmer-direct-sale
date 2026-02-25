@@ -1,154 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Farmer Direct Sale Management System</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Farmer Direct Sale Management</title>
 
-  <!-- Link CSS (go one level up) -->
-  <link rel="stylesheet" href="../style.css">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Your Existing CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="logo">
-    <img src="../images/farmer-svgrepo-com.svg" alt="Farmer Logo">
-    <span>Farmer Direct Sale</span>
-  </div>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
 
-  <nav class="nav">
-    <a href="#home">Home</a>
-    <a href="#features">Features</a>
-    <a href="#products">Products</a>
-    <a href="#roles">Roles</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Farmer Direct</a>
+        </div>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Sell Fresh. Buy Direct.</h1>
-    <p>
-      A simple platform connecting farmers and customers directly —  
-      no middlemen, fair prices, fresh produce.
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="farmer-register.html">Farmer Register</a></li>
+            <li><a href="buyer-register.html">Buyer Register</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+
+    <h1>Farmer Direct Sale Management System</h1>
+
+    <p class="text-center">
+        This platform connects farmers directly with buyers, eliminating intermediaries
+        and ensuring fair pricing and transparency.
     </p>
 
-    <div class="hero-buttons">
-      <a href="#roles" class="btn primary">Get Started</a>
-      <a href="#products" class="btn outline">View Products</a>
+    <div class="row" style="margin-top:30px;">
+
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-success">
+                <div class="panel-heading text-center">Farmers</div>
+                <div class="panel-body text-center">
+                    Register and manage your products.
+                    <br><br>
+                    <a href="farmer-register.html" class="btn btn-success btn-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-info">
+                <div class="panel-heading text-center">Buyers</div>
+                <div class="panel-body text-center">
+                    Browse products and place orders.
+                    <br><br>
+                    <a href="buyer-register.html" class="btn btn-info btn-block">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <div class="panel panel-warning">
+                <div class="panel-heading text-center">Admin</div>
+                <div class="panel-body text-center">
+                    Monitor system activities.
+                    <br><br>
+                    <a href="admin.html" class="btn btn-warning btn-block">Login</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
 
-  <div class="hero-image">
-    <img src="../images/hero-farm.png" alt="Farm Illustration">
-  </div>
-</section>
-
-<!-- Wave Divider -->
-<div class="wave-divider">
-  <img src="../images/intersecting-wave-layers.svg" alt="Wave Divider">
 </div>
 
-<!-- ================= FEATURES ================= -->
-<section id="features" class="features">
-  <h2>Why Choose This Platform?</h2>
-
-  <div class="feature-grid">
-    <article class="feature-card">
-      <img src="../images/farmer.png" alt="Farmer">
-      <h3>Direct Farmer Sales</h3>
-      <p>Farmers sell products directly without agents or middlemen.</p>
-    </article>
-
-    <article class="feature-card">
-      <img src="../images/shopping-cart-outline-svgrepo-com.svg" alt="Cart">
-      <h3>Easy Buying</h3>
-      <p>Customers browse, select, and purchase fresh produce easily.</p>
-    </article>
-
-    <article class="feature-card">
-      <img src="../images/admin-svgrepo-com.svg" alt="Admin">
-      <h3>Admin Control</h3>
-      <p>Admin oversees farmers, buyers, and overall system activity.</p>
-    </article>
-  </div>
-</section>
-
-<!-- ================= PRODUCTS ================= -->
-<section id="products" class="products">
-  <h2>Fresh Products Available</h2>
-
-  <div class="product-grid">
-
-    <article class="product-card">
-      <img src="../images/tomato.png" alt="Tomato">
-      <h3>Tomatoes</h3>
-      <p class="price">₹30 / kg</p>
-      <button class="btn small">Add to Cart</button>
-    </article>
-
-    <article class="product-card">
-      <img src="../images/potato.png" alt="Potato">
-      <h3>Potatoes</h3>
-      <p class="price">₹25 / kg</p>
-      <button class="btn small">Add to Cart</button>
-    </article>
-
-    <article class="product-card">
-      <img src="../images/onion.png" alt="Onion">
-      <h3>Onions</h3>
-      <p class="price">₹40 / kg</p>
-      <button class="btn small">Add to Cart</button>
-    </article>
-
-  </div>
-</section>
-
-<!-- ================= ROLES ================= -->
-<section id="roles" class="roles">
-  <h2>User Roles</h2>
-
-  <div class="role-grid">
-
-    <div class="role-card">
-      <img src="../images/farmer-svgrepo-com.svg" alt="Farmer">
-      <h3>Farmer</h3>
-      <p>Register, add products, manage prices, and track sales.</p>
-      <a href="#" class="btn outline">Farmer Login</a>
-    </div>
-
-    <div class="role-card">
-      <img src="../images/buyer-svgrepo-com.svg" alt="Buyer">
-      <h3>Buyer</h3>
-      <p>Browse products, add to cart, and place orders.</p>
-      <a href="#" class="btn outline">Buyer Login</a>
-    </div>
-
-    <div class="role-card">
-      <img src="../images/admin-svgrepo-com.svg" alt="Admin">
-      <h3>Admin</h3>
-      <p>Monitor users, products, and system performance.</p>
-      <a href="#" class="btn outline">Admin Panel</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about">
-  <h2>About the System</h2>
-  <p>
-    The Farmer Direct Sale Management System is designed to empower farmers,
-    ensure fair pricing, and provide customers with fresh agricultural produce
-    through a clean and user-friendly web interface.
-  </p>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2026 Farmer Direct Sale Management System</p>
+<!-- Footer -->
+<footer>
+    © 2026 Farmer Direct Sale Management System
 </footer>
 
 </body>

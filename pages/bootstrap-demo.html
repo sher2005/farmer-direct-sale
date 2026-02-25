@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap Responsive Demo - Farmer Direct Sale</title>
+
+<!-- Bootstrap 3 CDN -->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Farmer Direct Sale</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= CONTAINER ================= -->
+<div class="container">
+
+  <div class="jumbotron text-center">
+    <h1>Responsive Bootstrap Website</h1>
+    <p>Automatically adjusts to mobile, tablet, and desktop</p>
+    <a class="btn btn-success btn-lg">Get Started</a>
+  </div>
+
+  <!-- ================= GRID SYSTEM ================= -->
+
+  <h2 class="text-center">Bootstrap Grid System</h2>
+  <div class="row text-center">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="well">Column 1</div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="well">Column 2</div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4">
+      <div class="well">Column 3</div>
+    </div>
+  </div>
+
+  <!-- ================= UNEQUAL COLUMNS ================= -->
+
+  <h2 class="text-center">Unequal Columns</h2>
+  <div class="row text-center">
+    <div class="col-md-8">
+      <div class="well">Span 8 Columns</div>
+    </div>
+    <div class="col-md-4">
+      <div class="well">Span 4 Columns</div>
+    </div>
+  </div>
+
+  <!-- ================= TABLE ================= -->
+
+  <h2 class="text-center">Responsive Table</h2>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tomatoes</td>
+          <td>₹30/kg</td>
+          <td>100kg</td>
+          <td><button class="btn btn-primary btn-sm">Buy</button></td>
+        </tr>
+        <tr>
+          <td>Onions</td>
+          <td>₹40/kg</td>
+          <td>80kg</td>
+          <td><button class="btn btn-info btn-sm">Buy</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ================= IMAGES ================= -->
+
+  <h2 class="text-center">Bootstrap Images</h2>
+
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <img src="../images/tomato.png"
+      class="img-responsive img-rounded" alt="Tomato">
+      <p>Rounded Image</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="../images/onion.png"
+      class="img-responsive img-circle" alt="Onion">
+      <p>Circle Image</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img src="../images/potato.png"
+      class="img-responsive img-thumbnail" alt="Potato">
+      <p>Thumbnail Image</p>
+    </div>
+  </div>
+
+  <!-- ================= BUTTONS ================= -->
+
+  <h2 class="text-center">Bootstrap Buttons</h2>
+
+  <div class="text-center">
+    <button class="btn btn-default">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-link">Link</button>
+
+    <br><br>
+
+    <button class="btn btn-primary btn-lg">Large</button>
+    <button class="btn btn-primary btn-sm">Small</button>
+    <button class="btn btn-primary btn-xs">Extra Small</button>
+
+    <br><br>
+
+    <button class="btn btn-success btn-block">Block Level Button</button>
+
+    <br>
+
+    <button class="btn btn-primary active">Active</button>
+    <button class="btn btn-primary disabled">Disabled</button>
+  </div>
+
+</div>
+
+</body>
+</html>

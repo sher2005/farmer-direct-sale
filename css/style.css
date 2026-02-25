@@ -1,0 +1,166 @@
+/* ===============================
+   GLOBAL STYLING
+=================================*/
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ===============================
+   NAVBAR
+=================================*/
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2E8B57 !important;
+}
+
+/* ===============================
+   CONTAINER
+=================================*/
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   HEADINGS
+=================================*/
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   FORMS
+=================================*/
+
+form label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #2E8B57;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
+}
+
+/* ===============================
+   BUTTONS
+=================================*/
+
+button,
+.btn-custom {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover,
+.btn-custom:hover {
+    background-color: #246b45;
+}
+
+/* ===============================
+   TABLES
+=================================*/
+
+.table th {
+    background-color: #2E8B57;
+    color: white;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+/* ===============================
+   IMAGES
+=================================*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2E8B57;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=================================*/
+
+@media (max-width: 992px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
