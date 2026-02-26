@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Farmer Direct Sale Management</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Farmer Direct</a>
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="farmer-register.html">Farmer Register</a></li>
-            <li><a href="buyer-register.html">Buyer Register</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="admin.html">Admin</a></li>
-        </ul>
-
-    </div>
-</nav>
-
-<div class="container text-center">
-
+<header>
     <h1>Farmer Direct Sale Management System</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="farmer-register.html">Farmer</a>
+        <a href="buyer-register.html">Buyer</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
 
+<section class="banner">
+    <img src="../images/hero-farm.png" alt="Farm">
+    <div class="banner-text">Fresh From Farm To Home</div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
     <p>
-        Connecting farmers directly with buyers for better pricing and transparency.
+        This system connects farmers directly with buyers,
+        eliminating intermediaries and ensuring fair pricing.
     </p>
+</section>
 
-</div>
+<section class="modules">
+    <div class="module-card">
+        <img src="../images/farmer-svgrepo-com.svg" width="80">
+        <h3>Farmer</h3>
+        <a href="farmer-register.html">Register</a>
+    </div>
 
-<footer class="text-center">
+    <div class="module-card">
+        <img src="../images/buyer-svgrepo-com.svg" width="80">
+        <h3>Buyer</h3>
+        <a href="buyer-register.html">Register</a>
+    </div>
+
+    <div class="module-card">
+        <img src="../images/admin-svgrepo-com.svg" width="80">
+        <h3>Admin</h3>
+        <a href="admin.html">Login</a>
+    </div>
+</section>
+
+<footer>
     © 2026 Farmer Direct Sale Management System
 </footer>
 
