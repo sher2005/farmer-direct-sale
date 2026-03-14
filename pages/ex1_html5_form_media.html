@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form with Media</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        h1 { color: #333; }
+        input, select, textarea { margin: 10px 0; padding: 10px; width: 100%; }
+        .budget-range { color: green; font-weight: bold; }
+    </style>
+    <script>
+        function displayBudgetRange() {
+            const budgetMin = document.getElementById('budget-min').value;
+            const budgetMax = document.getElementById('budget-max').value;
+            document.getElementById('budget-display').innerText = `Budget Range: $${budgetMin} - $${budgetMax}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML5 Form Example with Media</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="budget-min">Minimum Budget:</label>
+        <input type="number" id="budget-min" name="budget-min" oninput="displayBudgetRange()" required>
+
+        <label for="budget-max">Maximum Budget:</label>
+        <input type="number" id="budget-max" name="budget-max" oninput="displayBudgetRange()" required>
+
+        <p id="budget-display" class="budget-range">Budget Range: $0 - $0</p>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="media">Upload Media:</label>
+        <input type="file" id="media" name="media"><br/> 
+        <label for="audio">Audio:</label><br/>
+        <audio controls>
+            <source src="audio_sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio><br/><
+        <label for="video">Video:</label><br/>
+        <video width="320" height="240" controls>
+            <source src="video_sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video><br/>
+        <label for="image">Image:</label><br/>
+        <img src="image_sample.png" alt="Sample Image" width="200"><br/>
+
+        <label>Services:</label><br/>
+        <input type="checkbox" id="service1" name="services" value="service1"> Service 1<br/>
+        <input type="checkbox" id="service2" name="services" value="service2"> Service 2<br/>
+        <input type="checkbox" id="service3" name="services" value="service3"> Service 3<br/>
+
+        <label for="preferences">Preferences:</label>
+        <select id="preferences" name="preferences">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select><br/>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
